@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>日本全国花粉飛散マップ Pollen Map in Japan | ICS</title>
+  <link rel="icon" sizes="16x16 32x32 48x48 128x128 256x256" href="/imgs/favicon.ico"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+  <meta name="google" content="notranslate"/>
+  <meta name="keywords" content="花粉,飛散量,CreateJS,TypeScript,HTML5,canvas,株式会社ICS"/>
+  <meta name="description" content="日本全国花粉飛散マップは全国都道府県別の花粉飛散状況を地域別・年代別に可視化。HTML5のビジュアライゼーションコンテンツ。"/>
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:description" content="日本全国花粉飛散マップは全国都道府県別の花粉飛散状況を地域別・年代別に可視化。HTML5のビジュアライゼーションコンテンツ。"/>
+  <meta name="twitter:title" content="日本全国花粉飛散マップ Pollen Map in Japan | ICS"/>
+  <meta name="twitter:site" content="@icsweb"/>
+  <meta name="twitter:image" content="http://ics-web.jp/imgs/140220_pollenmap_4.png"/>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="日本全国花粉飛散マップ Pollen Map in Japan - ICS">
+  <meta property="og:url" content="http://ics-web.jp/projects/pollenmap">
+  <meta property="og:description" content="日本全国花粉飛散マップは全国都道府県別の花粉飛散状況を地域別・年代別に可視化。HTML5のビジュアライゼーションコンテンツ。">
+  <meta property="og:image" content="http://ics-web.jp/imgs/140220_pollenmap_4.png">
+  <meta property="og:site_name" content="ICS Inc.">
+
+  <script defer src="http://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  <script defer src="main.js"></script>
+
+  <!-- Google Analytics -->
+  <script type="text/javascript" async>//<![CDATA[
+  // Google Analytics
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34243464-1']);
+  _gaq.push(['_trackPageview']);
+  (function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+  //]]></script>
+
+</head>
+<body>
+  <!-- 表示領域 -->
+  <canvas id="mainCanvas"></canvas>
+
+  <!-- 制作会社の紹介 -->
+  <div class="info">
+    <a href="https://ics.media/" target="_blank" rel="noopener" class="info__corp" title="Created By ICS INC."></a><br>
+  </div>
+
+  <!-- ソーシャルボタン -->
+  <div id="socialButtons">
+    <div id="socialTw"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja"></a></div>
+    <div id="socialFb">
+      <div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-height="20" data-show-faces="false" data-colorscheme="dark"></div>
+    </div>
+    <div id="socialHb">
+      <a href="http://ics-web.jp/projects/pollenmap/" class="hatena-bookmark-button" data-hatena-bookmark-title="日本全国花粉飛散マップ Pollen Map in Japan | ICS" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"></a>
+    </div>
+  </div>
+</body>
+</html>

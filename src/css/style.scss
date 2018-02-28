@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: nixie-one;
+  color: #fff;
+  background-color: #444;
+  overflow: hidden;
+  height: 100%;
+
+  user-select: none;
+}
+
+#mainCanvas {
+}
+
+#socialButtons {
+  position: absolute;
+  height: 30px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center; /* 縦方向中央揃え */
+}
+
+#socialFb {
+  margin-left: 10px;
+}
+
+#socialHb {
+  margin-left: 10px;
+}
+
+/*
+ソーシャルボタンを並べた時に Facebook の Like Button （いいねボタン）だけが下にずれてしまう現象の修正方法 - HAM MEDIA MEMO
+https://h2ham.net/facebook-like-button-vertical-problem
+*/
+.fb_iframe_widget > span {
+  vertical-align: baseline !important;
+}
+
+.info {
+  text-align: right;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  width: 225px;
+  height: 28px;
+
+  &__corp {
+    display: inline-block;
+    background: url("../images_first/Copyright.png");
+    width: (148px/2);
+    height: (28px/2);
+    background-size: cover;
+    text-indent: -99999px;
+  }
+}
+
+
+
+#corpImg {
+  margin-bottom: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    top: 15px;
+  }
+
+
+  #socialButtons {
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+
+    justify-content: center; /* 横方向中央揃え */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #socialButtons {
+    left: 30px;
+    top: 90px;
+    width: 350px;
+  }
+}
