@@ -1,5 +1,10 @@
-/node_modules
-/.idea
+node_modules
+.idea
+.vscode
 
 .DS_Store
 Thumbs.db
+
+package-lock.json
+yarn.json
+/yarn.lock
