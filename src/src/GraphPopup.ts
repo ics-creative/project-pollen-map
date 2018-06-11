@@ -100,7 +100,7 @@ export class GraphPopup extends createjs.Container {
 
     this._dots = [];
 
-    const timeline = new createjs.Timeline(null, 'default', null);
+    const timeline = new createjs.Timeline();
 
     for (let i = 0; i < graphData.pollen.length; i++) {
       let valueAbs = graphData.pollen[i];
