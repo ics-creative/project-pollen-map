@@ -55,8 +55,7 @@ export class GraphPopup extends createjs.Container {
     this._label.start();
 
     const g = this._shapeLines.graphics;
-    g
-      .clear()
+    g.clear()
       .beginStroke('#666666')
       .setStrokeStyle(2)
       .setStrokeDash([4, 2]);
@@ -68,7 +67,7 @@ export class GraphPopup extends createjs.Container {
       g.moveTo(0, gy);
       g.lineTo(this.VIEW_W, gy);
 
-      let label = graffMaxValueCell * i / 4;
+      let label = (graffMaxValueCell * i) / 4;
       label = Math.round(label / 50) * 50;
 
       let tf = new createjs.Text(String(label), '12px ' + FONT_NAME, '#999');
@@ -146,8 +145,7 @@ export class GraphPopup extends createjs.Container {
   private handleTick() {
     const g = this._shapeValues.graphics;
 
-    g
-      .clear()
+    g.clear()
       .beginStroke(createjs.Graphics.getHSL(50, 50, 80))
       .setStrokeStyle(2, 'round', 'round')
       .setStrokeDash([]);

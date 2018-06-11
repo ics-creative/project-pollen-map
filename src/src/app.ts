@@ -88,7 +88,7 @@ function startLoad(): void {
       src: 'http://fonts.googleapis.com/css?family=Titillium+Web:400,200',
       id: 'font',
       type: createjs.LoadQueue.CSS,
-    }
+    },
   ]);
 }
 

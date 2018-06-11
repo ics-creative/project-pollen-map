@@ -418,8 +418,9 @@ export class MainView extends createjs.Container {
 
     for (let i = 0; i < len; i++) {
       let itemId: number = areaList[i];
-      let targetObj: createjs.DisplayObject = <createjs.DisplayObject>this
-        .containerMap['item_' + itemId];
+      let targetObj: createjs.DisplayObject = <createjs.DisplayObject>(
+        this.containerMap['item_' + itemId]
+      );
 
       arr[i] = { x: targetObj.x, y: targetObj.y, itemId: itemId };
     }

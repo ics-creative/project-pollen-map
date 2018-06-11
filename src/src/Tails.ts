@@ -72,8 +72,7 @@ export class Tails extends createjs.Container {
       const tail: Tail2 = <Tail2> this.tailList[i];
       if (tail.drawLines.length > 0) {
         let index = tail.drawLines.length - 1;
-        g
-          .beginFill('#888')
+        g.beginFill('#888')
           .drawCircle(tail.drawLines[index][2], tail.drawLines[index][3], 2)
           .endFill();
       }
